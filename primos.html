@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Primos</title>
+</head>
+<body>
+    <script>
+        let contadorPrimos = [2,3,5,7];
+        for (let c = 4; contadorPrimos.length <= 100; c++) {
+            if (c % 2 !== 0 && c % 3 !== 0 && c % 4 !== 0 && c % 5 !== 0 && c % 6 !== 0 && c % 7 !== 0) {
+                contadorPrimos.push(c);
+            }
+        }
+
+        document.write(`<p>${contadorPrimos}</p>`);
+    </script>
+</body>
+</html>

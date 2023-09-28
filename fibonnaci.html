@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Fibonacci</title>
+</head>
+<body>
+    <script>
+        let fibonacci = [0, 1];
+        let extrair;
+        
+        for (; fibonacci.length <= 50;) {
+            extrair = fibonacci.slice(-2);
+            let soma = 0;
+            for (const num of extrair) [
+                soma += num
+            ]
+            fibonacci.push(soma);
+        }
+
+        document.write(`${fibonacci}`);
+    </script>
+</body>
+</html>
