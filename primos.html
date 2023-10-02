@@ -8,13 +8,21 @@
 <body>
     <script>
         let contadorPrimos = [2,3,5,7];
-        for (let c = 4; contadorPrimos.length <= 100; c++) {
-            if (c % 2 !== 0 && c % 3 !== 0 && c % 4 !== 0 && c % 5 !== 0 && c % 6 !== 0 && c % 7 !== 0) {
+
+        for (let c = 8; contadorPrimos.length < 100; c++) {
+            let numPrimo = true;
+            for (let i = 2; i < c; i++) {
+                if (c % i === 0) {
+                    numPrimo = false;
+                    break;
+                }
+            }
+            if (numPrimo === true) {
                 contadorPrimos.push(c);
             }
         }
 
-        document.write(`<p>${contadorPrimos}</p>`);
+    document.write(contadorPrimos);
     </script>
 </body>
 </html>
