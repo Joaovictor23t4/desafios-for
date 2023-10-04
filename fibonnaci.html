@@ -12,10 +12,7 @@
         
         for (; fibonacci.length <= 50;) {
             extrair = fibonacci.slice(-2);
-            let soma = 0;
-            for (const num of extrair) [
-                soma += num
-            ]
+            let soma = extrair.reduce((soma, nmr) => soma + nmr, 0);
             fibonacci.push(soma);
         }
 
